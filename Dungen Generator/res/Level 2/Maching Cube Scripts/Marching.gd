@@ -1,7 +1,7 @@
-# res://Scripts/Marching.gd
+# res://Level 2/Maching Cube Scripts/Marching.gd
 extends MeshInstance3D
 
-const Tables = preload("res://Scripts/MCTables.gd")
+const Tables = preload("res://Level 2/Maching Cube Scripts/MCTables.gd")
 
 # ── Parameters ────────────────────────────────────────────────────────────────
 @export var grid_size: Vector3i = Vector3i(48, 32, 48) : set = _set_grid_size
@@ -93,7 +93,7 @@ func _setup_noise() -> void:
 # ── Generate mesh ────────────────────────────────────────────────────────────
 func _generate() -> void:
 	if Tables == null:
-		push_error("MCTables.gd failed to load. Check path: res://Scripts/MCTables.gd")
+		push_error("MCTables.gd failed to load. Check path: res://Level 2/Maching Cube Scripts/MCTables.gd")
 		return
 
 	var nx: int = grid_size.x + 1

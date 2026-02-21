@@ -1,4 +1,4 @@
-# res://Scripts/MCTables.gd
+# res://Level 2/Maching Cube Scripts/MCTables.gd
 extends Resource
 class_name MCTables
 
